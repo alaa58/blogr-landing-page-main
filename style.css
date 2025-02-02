@@ -314,6 +314,7 @@ h5 {
 .feature-section {
     padding-block: 10%;
     display: flex;
+    
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -407,6 +408,11 @@ h5 {
 
 @media screen and (max-width: 950px) {
 
+    body{
+        padding: 0;
+        margin: 0;
+        width: 100%; 
+    }
     .list,
     .login,
     .signUp,
@@ -472,17 +478,47 @@ h5 {
 
     .overlay-image {
         width: 100%;
-        top: -300px;
+        top: -250px;
         left: 0;
         z-index: 3;
     }
 
     .details {
-        margin-block-start: 430px;
+        margin-block-start: 200px;
         max-width: 100%;
         text-align: center;
         margin-inline-end: 0;
         z-index: 2;
+    }
+    .feature-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-block: 5%; /* تقليل الحشو */
+    }
+
+    .feature-image {
+        max-width: 100%; /* جعل الصورة تأخذ العرض الكامل */
+        position: static; /* إزالة الـ position absolute */
+        margin-bottom: 2rem; /* إضافة مسافة أسفل الصورة */
+    }
+
+    .feature-image img {
+        position: static; /* إزالة الـ position absolute */
+        left: auto; /* إعادة تعيين الـ left */
+        top: auto; /* إعادة تعيين الـ top */
+        transform: none; /* إزالة التحويل */
+        width: 80%; /* تقليل حجم الصورة */
+        height: auto;
+    }
+
+    .feature-content {
+        max-width: 100%; /* جعل المحتوى يأخذ العرض الكامل */
+        margin-inline-end: 0; /* إزالة الهامش */
+    }
+
+    .feature-item {
+        margin-bottom: 20px; /* تقليل المسافة بين العناصر */
     }
 
     .footer-content {
