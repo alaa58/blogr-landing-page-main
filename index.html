@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./images/favicon-32x32.png">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | [Blogr]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  </head>
+  <body>
+    <main>
+      <section class="first-section">
+        <nav class="nav1">
+          <img id="logo" src="./images/logo.svg" alt="logo">
+          <ul class="list">
+            <div>
+              <li class="dataList productToggle"><a href="#">Product
+                  <img src="./images/icon-arrow-light.svg" alt="arrow"></a>
+              <!-- hidden content -->
+              <div class="product">
+                <p>Overview</p>
+                <p>Pricing</p>
+                <p>Marketplace</p>
+                <p>Features</p>
+                <p>Integrations</p>
+              </div>
+            </li>
+            </div>
+            <li class="dataList companyToggle"><a href="#">Company<img
+                  src="./images/icon-arrow-light.svg" alt="arrow"></a>
+                <!-- hidden content -->
+              <div class="company">
+                <p>About</p>
+                <p>Team</p>
+                <p>Blog</p>
+                <p>Careers</p>
+              </div>
+            </li>
+            <li class="dataList connectToggle"><a href="#">Connect<img
+                  src="./images/icon-arrow-light.svg" alt="arrow"></a>
+                  <div class="connect">
+                    <p>Contact</p>
+                    <p>Newsletter</p>
+                    <p>LinkedIn</p>
+                  </div>
+                </li>
+          </ul>
+          <button class="login">Login</button>
+          <button class="signUp">Sign Up</button>
+        </nav>
+        <!-- hidden nav -->
+        <div>
+          <ul class="mobile-menu" id="mobileMenu">
+              <div>
+                <li class="dataList productToggle"><a href="#">Product
+                    <img src="./images/icon-arrow-light.svg" alt="arrow"></a>
+                <!-- hidden content -->
+                <div class="product">
+                  <p>Overview</p>
+                  <p>Pricing</p>
+                  <p>Marketplace</p>
+                  <p>Features</p>
+                  <p>Integrations</p>
+                </div>
+              </li>
+              </div>
+              <li class="dataList companyToggle"><a href="#">Company<img
+                    src="./images/icon-arrow-light.svg" alt="arrow"></a>
+                  <!-- hidden content -->
+                <div class="company">
+                  <p>About</p>
+                  <p>Team</p>
+                  <p>Blog</p>
+                  <p>Careers</p>
+                </div>
+              </li>
+              <li class="dataList connectToggle"><a href="#">Connect<img
+                    src="./images/icon-arrow-light.svg" alt="arrow"></a>
+                    <div class="connect">
+                      <p>Contact</p>
+                      <p>Newsletter</p>
+                      <p>LinkedIn</p>
+                    </div>
+                  </li>
+                  <hr style="color: black;">
+                  <div id="btns">
+                    <button class="login2">Login</button>
+            <button class="signUp2">Sign Up</button>
+                  </div>
+          </ul>
+        </div>
+        <nav class="nav2">
+          <img id="logo2" src="./images/logo.svg" alt="logo">
+          <i class="fa-solid fa-bars menu"></i>
+        </nav>
+        <div>
+          <h1>A modern publishing platform</h1>
+          <h5>Grow your audience and build your online brand</h5>
+        </div>
+        <div class="btn">
+          <button class="start">Start for Free</button>
+          <button class="learn">Learn More</button>
+        </div>
+      </section>
+      <div class="header-div">
+        <h2 id="header">Designed for the future</h2>
+      </div>
+      <section class="second-section">
+        <div class="left-div">
+          <div class="top_div">
+            <h3>Introducing an extensible editor</h3>
+            <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+              The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+              videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+              change the looks of a blog.</p>
+          </div>
+          <div class="bottom-div">
+            <h3>Robust content management</h3>
+            <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+              by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+            </p>
+          </div>
+        </div>
+        <div class="right-div">
+          <img src="./images/illustration-editor-desktop.svg" alt="">
+        </div>
+      </section>
+      <section class="third-section">
+        <div>
+          <img src="./images/bg-pattern-circles.svg" class="cropped-image">
+          <img src="./images/illustration-phones.svg" class="overlay-image" alt="">
+        </div>
+        
+        <div class="details">
+          <h3>State of the Art Infrastructure</h3>
+          <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+            This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+        </div>
+      </section>
+
+      <section class="feature-section">
+        <div class="feature-image">
+            <img src="./images/illustration-laptop-desktop.svg" alt="Laptop Illustration">
+        </div>
+        <div class="feature-content">
+            <div class="feature-item">
+                <h2>Free, open, simple</h2>
+                <p>
+                    Blogr is a free and open-source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+                </p>
+            </div>
+            <div class="feature-item">
+                <h2>Powerful tooling</h2>
+                <p>
+                    Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.
+                </p>
+            </div>
+        </div>
+    </section>
+
+      <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h2>Blogr</h2>
+            </div>
+            <div class="footer-section">
+                <h3>Product</h3>
+                <ul>
+                    <li>Overview</li>
+                    <li>Pricing</li>
+                    <li>Marketplace</li>
+                    <li>Features</li>
+                    <li>Integrations</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li>About</li>
+                    <li>Team</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <ul>
+                    <li>Contact</li>
+                    <li>Newsletter</li>
+                    <li>LinkedIn</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    </main>
+
+    <!-- Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+
+  Contact
+  Newsletter
+  LinkedIn
+  
+  Login
+  Sign Up
+
+  A modern publishing platform
+  Grow your audience and build your online brand
+
+  Start for Free
+  Learn More
+
+  Designed for the future
+
+  Introducing an extensible editor
+  Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+  The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+  videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+  change the looks of a blog.
+
+  Robust content management
+  Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+  by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+
+  State of the Art Infrastructure
+  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+
+  Free, open, simple
+  Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+  features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+  and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+
+  Powerful tooling
+  Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+  capable of producing even the most complicated sites.
+
+  Product
+
+  Overview
+  Pricing
+  Marketplace
+  Features
+  Integrations
+
+  Company
+
+  About
+  Team
+  Blog
+  Careers
+
+  Connect
+  
+  Contact
+  Newsletter
+  LinkedIn -->
+
+    <script src="./script.js"></script>
+  </body>
+
+</html>
